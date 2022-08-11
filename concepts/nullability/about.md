@@ -59,10 +59,10 @@ The [`??` operator][null-coalescing-operator] allows one to return a default val
 
 ```csharp
 string? name1 = "John";
-name1 ?? "Paul"; // => "John"
+name1 ??= "Paul"; // => "John"
 
 string? name2 = null;
-name2 ?? "George"; // => "George"
+name2 ??= "George"; // => "George"
 ```
 
 The [`?.` operator][null-conditional-operator] allows one to call members safely on a possibly `null` value:
